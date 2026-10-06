@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Aventura</title>
+</head>
+<body>
+
+<h1>🏰 Aventura</h1>
+
+<p id="texto">Você está em uma floresta. O que deseja fazer?</p>
+
+<button onclick="escolher(1)">Entrar na caverna</button>
+<button onclick="escolher(2)">Seguir pela floresta</button>
+
+<script>
+function escolher(opcao) {
+    let texto = document.getElementById("texto");
+
+    if (opcao == 1) {
+        texto.innerHTML = "Você encontrou um tesouro! 🏆";
+    } else {
+        texto.innerHTML = "Você encontrou uma vila segura! 🏠";
+    }
+}
+</script>
+
+</body>
+</html>
